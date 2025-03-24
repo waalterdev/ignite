@@ -8,7 +8,7 @@ export function Post() {
                     <img className={styles.avatar} src="https://avatars.githubusercontent.com/u/188369598?v=4" />
                     <div className={styles.authorInfo}>
                         <strong>Sherman Walter</strong>
-                        <span>Web Developer</span>
+                        <span>Fullstack Developer</span>
                     </div>
                 </div>
 
@@ -28,6 +28,16 @@ export function Post() {
                     <a href="#">#rocketseat</a>
                 </p>
             </div>
+
+            <form className={styles.commentForm}>
+                <strong>Deixe seu feedback</strong>
+                <textarea
+                    placeholder="Deixe um comentário"
+                />
+                <footer>
+                    <button type="submit">Publicar</button>
+                </footer>
+            </form>
         </article>
     );
 }

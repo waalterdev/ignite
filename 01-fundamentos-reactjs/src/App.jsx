@@ -41,10 +41,11 @@ function App() {
       <Header />
       <div className={styles.wrapper}>
         <Sidebar />
-        <main>
+        <main>4
           {posts.map(post => {
             return (
               <Post
+                key={post.id}
                 author={post.author}
                 content={post.content}
                 publishedAt={post.publishedAt}
